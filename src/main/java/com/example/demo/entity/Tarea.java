@@ -27,11 +27,15 @@ public class Tarea {
     @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ss'Z'")
     private Date fechaentrega;
 
+    @Column
+    private boolean terminado;
 
-    public Tarea(String materia,String descripcion, Date fechaentrega){
+
+    public Tarea(String materia,String descripcion, Date fechaentrega, Boolean terminado){
         this.materia=materia;
         this.descripcion=descripcion;
         this.fechaentrega=fechaentrega;
+        this.terminado=terminado;
     }
 
 

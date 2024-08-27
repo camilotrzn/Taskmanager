@@ -27,11 +27,4 @@ public class TareaController {
                     .body("Ocurrió un error inesperado.");
         }
     }
-
-
-    /*
-    public String agregarTarea(@RequestBody Tarea tarea) throws SQLException {
-        service.añadirTarea(tarea);
-        return "Tarea Guardada";
-    }*/
 }
